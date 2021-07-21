@@ -1,0 +1,427 @@
+/*html{
+	scroll-behavior: smooth;
+}*/
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+a{ text-decoration: none;}
+li{ list-style: none;}
+body{
+	font-family: segoe ui;
+	background-color: #282828;
+}
+header h1,h2,h3,h4,p,li{ cursor: default;}
+
+nav{
+	position: fixed;
+	display: flex;
+	width: 100%; height: 60px;
+	z-index: 1;
+	color: #f1f1f1f1;
+	top: -60px;
+	transition: .2s;
+}
+nav .nav-bg{
+	position: absolute;
+	width: 100%; height: 100%;
+	z-index: -1;
+	background-color: #333;
+}
+nav h1{
+	flex: 1.3;
+	margin: auto;
+	margin-left: 3%;
+	font-size: 32px;
+	font-weight: 450;
+}
+nav ul{
+	flex: 1;
+	display: flex;
+	margin: 0 auto;
+	margin-right: 1.5%;
+	font-size: 20px;
+	justify-content: space-around;
+}
+nav li{
+	width: 25%;
+	text-align: center;
+}
+nav li:hover{
+	transition: .35s;
+	border-bottom: 5px solid brown;
+}
+nav a{
+	color: #f1f1f1f1;
+	line-height: 60px;
+	margin: auto;
+}
+
+header{
+	background: transparent;
+	color: #eaeaea;
+	min-height: 695px;
+}
+header .home-bg{
+	position: absolute;
+	z-index: -1;
+	width: 100%; height: 695px;
+	background-image: url(img/home/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(8px) saturate(.4) brightness(.8);
+}
+header .navigation h1{
+	text-align: center;
+	font-size: 50px;
+	font-weight: 300;
+	padding: 20px 0 35px 0;
+}
+header ul{
+	width: 70%;
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	font-size: 22px;
+}
+header a{
+	color: salmon;
+}
+header ul a:hover{
+	border-bottom: 3px solid salmon;
+	transition: .3s;
+}
+header .intro{
+	display: flex;
+	margin: auto;
+	min-height: 500px;
+	align-items: center;
+}
+header .frame{
+	margin: auto;
+	width: 300px; height: 300px;
+	border-radius: 50% 50%;
+	box-shadow: -7px 7px 0 10px salmon;
+}
+header .foto{
+	width: 100%; height: 100%;
+	border-radius: 50% 50%;
+	background-image: url(img/home/saya.jpg);
+	background-repeat: no-repeat;
+	background-position: -140px -170px;
+	filter: saturate(0);
+	transition: filter .4s;
+}
+header .foto:hover{
+	filter: none;
+}
+header .text{
+	flex: .57;
+}
+.text h1{
+	font-weight: normal;
+	font-size: 30px;
+}
+.text h2{
+	font-weight: 400;
+	font-size: 46px;
+}
+.text h3{
+	font-weight: normal;
+	font-size: 20px;
+}
+.text button{
+	margin-top: 25px;
+	width: 140px; height: 40px;
+	font-size: 16px;
+	color: salmon;
+	background: transparent;
+	border: 2px solid salmon;
+	cursor: pointer;
+	transition: background-color .3S;
+}
+.text button:hover{
+	color: white;
+	background-color: salmon;
+}
+
+#profile{
+	background-color: white;
+	min-height: 627px;
+	margin: auto;
+	padding-top: 60px;
+	border-top: 10px solid salmon;
+}
+.profile-main{
+	display: grid;
+	width: 90%;
+	grid-template-columns: 40% auto;
+	margin-top: 40px;
+	padding: 10px 50px 10px 0;
+	background-color: #222;
+	box-shadow: 20px 20px 0 0 salmon;
+}
+#profile h3{
+	font-size: 42px;
+	margin: auto;
+	padding: 10px 0 20px 0;
+	text-align: center;
+	font-weight: 500;
+}
+#profile img{
+	width: 170px;
+	margin: auto;
+	margin-left: 40%;
+	transform: scale(1.5) translate(0,22px);
+	box-shadow: 5px 5px 0 0 brown;
+}
+#profile .story{
+	font-size: 18px;
+	color: #f1f1f1;
+	margin: auto;
+}
+
+#skills{
+	background-color: black;
+	min-height: 657px;
+	margin: auto;
+	padding-top: 30px;
+}
+#skills h3{
+	color: white;
+	font-size: 42px;
+	margin: auto;
+	padding: 60px 0 70px 0;
+	text-align: center;
+	font-weight: 500;
+}
+.skills-type{
+	justify-content: space-around;
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+.skills-type div{
+	background-color: lightgrey;
+	width: 100%; height: 30px;
+	margin-bottom: 20px;
+}
+.skills-type h4{
+	font-weight: normal; font-size: 22px;
+	margin-left: 20px;
+}
+
+.skills-type .skills-container{
+	width: 220px; height: 270px;
+	flex: 1;
+	margin-right: 50px;
+	margin-top: 20px;
+	position: relative;
+	background-color: transparent;
+}
+.skills-container h4{
+	margin: auto;
+	text-align: center;
+}
+.skills-container .percent{
+	font-size: 32px;
+	position: absolute;
+	top: 90px; left: 85px;
+	font-weight: 500;
+	color: white;
+}
+.skills-container .text{
+	margin-top: 8px;
+	color: white;
+}
+.skills-container .progressbar_track{
+	fill: transparent;
+	stroke: dimgrey;
+	stroke-width: 3px;
+}
+.skills-container .progressbar_thumb{
+	fill: transparent;
+	stroke: salmon;
+	stroke-width: 3px;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	animation: progress 1.2s forwards;
+}
+#c .progressbar_thumb{
+	stroke-dasharray: 113;
+}
+#java .progressbar_thumb{
+	stroke-dasharray: 94;
+}
+#web .progressbar_thumb{
+	stroke-dasharray: 94;
+}
+#design .progressbar_thumb{
+	stroke-dasharray: 132;
+}
+.skills-type .c-percent{
+	position: absolute;
+}
+.skills-type .java-percent{
+	position: absolute;
+}
+.skills-type .web-percent{
+	position: absolute;
+}
+.skills-type .design-percent{
+	position: absolute;
+}
+.myworks-title{
+	color: white;
+	font-size: 26px;
+	text-align: center;
+	margin: auto;
+	padding: 50px 0 40px 0;
+	color: #eaeaea;
+}
+.myworks{
+	width: 75%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.myworks-container{
+	background-color: #dadada;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 300px; height: 193px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.myworks-text{
+	height: 24px;
+	margin-top: 169px;
+	padding-left: 10px;
+	background-color: #eaeaea;
+	font-weight: bold;
+}
+.myworks-text a{
+	color: #333;
+}
+
+#education{
+	background-image: linear-gradient(#dadada 70%,white);
+	min-height: 657px;
+	margin: auto;
+	padding-top: 70px;
+}
+#education h3{
+	font-size: 42px;
+	margin: auto;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	font-weight: 500;
+}
+.education-container{
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: auto;
+}
+.education-item{
+	background-color: white;
+	height: 270px; width: 240px;
+	box-shadow: 0px 30px 10px -20px rgba(0,0,0,.75);
+	transition: .3s;
+}
+.education-item:hover{
+	transform: scale(1.15);
+	box-shadow: 0px 80px 10px -40px rgba(0,0,0,.25)
+}
+.education-image{
+	background-color: black;
+	height: 170px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.education-text{
+	border-top: 5px solid salmon;
+	text-align: center;
+	padding-top: 8px;
+}
+.education-text h4{
+	font-size: 19px;
+}
+.education-text p{
+	font-style: italic;
+}
+
+#contact{
+	background-color: white;
+	min-height: 587px;
+	margin: auto;
+	padding-top: 70px;
+}
+#contact h3{
+	font-size: 42px;
+	margin: auto;
+	padding: 15px 0 30px 0;
+	text-align: center;
+	font-weight: 500;
+}
+.contact-container{
+	display: flex;
+	height: 470px;
+}
+.sosmed{
+	background-color: black;
+	color: #eaeaea;
+	width: 25%;
+}
+.sosmed div{
+	background-color: white; 
+	width: 80px; height: 80px;
+	margin: auto;
+	margin-bottom: 30px;
+	border-radius: 26px;
+}
+.sosmed img{
+	width: 80px;
+}
+.message{
+	padding: 70px 0 0 200px;
+}
+.message label,textarea{
+	display: block;
+	font-size: 18px;
+}
+.message label{
+	padding: 20px 0 10px 0;
+	font-weight: bold;
+}
+.message textarea{
+	resize: none;
+	outline: none;
+	border: 1.5px solid black;
+	font-family: segoe ui;
+}
+.message button{
+	margin-top: 25px;
+	width: 140px; height: 40px;
+	font-size: 16px;
+	color: white;
+	background: black;
+	cursor: pointer;
+	transition: background-color .3S;
+}
+
+footer{
+	height: 50px;
+	background-color: black;
+}
+footer h3{
+	color: #f1f1f1f1;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: normal;
+}
