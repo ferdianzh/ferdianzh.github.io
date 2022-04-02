@@ -6,194 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferdianzh Portofolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <script src="assets/js/tailwind/tailwind.min.js"></script>
   </head>
   <body>
     <header>
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#home">Ferdianzh</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto gap-4">
-              <li class="nav-item">
-                <a class="nav-link" href="#profile">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">My Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#closing">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </header>
 
-    <main>
-      <article>
-        <section id="home">
-          <div class="bg-blur" style="background-image: url('assets/images/app/bg-home.jpg');"></div>
-          <div class="bg-overlay"></div>
-          <div class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <div class="container d-flex flex-column pt-3">
-              <a class="navbar-brand" href="#home"><h1>Ferdianzh</h1></a>
-              <div>
-                <ul class="navbar-nav d-flex flex-row gap-5">
-                  <li class="nav-item">
-                    <a class="nav-link fs-4" aria-current="page" href="#profile">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-4" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-4" href="#works">My Works</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-4" href="#closing">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="container d-flex align-items-center justify-content-evenly mt-5">
-            <img src="assets/images/app/saya.jpg" alt="" class="rounded-circle">
-            <div class="text-white border-start border-5 py-3 px-5 bg-dark bg-opacity-50">
-              <h4>I am</h4>
-              <h2>Muhammad Hafizh</h2>
-              <h4>A Web Developer</h4>
-              <a href="#profile" class="btn btn-outline-success mt-3">More About Me</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="profile" class="container-fluid bg-black pt-5 pb-5">
-          <div class="container p-4">
-            <div class="row px-5 pt-4">
-              <div class="col">
-                <img src="assets/images/app/profile_program.svg" alt="" class="img-fluid"/>
-              </div>
-              <div class="col text-white bg-dark p-4 bg-opacity-50">
-                <h3 class="border-bottom border-2 pb-2">Profile</h3>
-                <p>Saya merupakan mahasiswa Teknik Informatika di Universitas Negeri Surabaya. Memiliki berbagai pengalaman dalam pemrograman web, suka memperhatikan detail dalam UX, dan suka belajar hal baru. Saat ini tengah mempelajari lebih dalam mengenai UI/UX dan framework.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" class="container-fluid py-5">
-          <h1 class="text-center text-white my-5">What I'm Good At?</h1>
-          <div class="card-group container gap-5 mb-5">
-            <div class="card text-white bg-dark">
-              <img src="assets/images/skills/icons8-database-100.png" class="card-img-top mt-5" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center mb-4">Backend Developer</h5>
-                <p class="card-text pt-2">
-                  <ul type="circle">
-                    <li>MySQL & PostgreSQL</li>
-                    <li>PHP</li>
-                    <li>Laravel & Codeigniter</li>
-                    <li>Python</li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted fs-5">&starf;&starf;&starf;&starf;&star;</small>
-              </div>
-            </div>
-            <div class="card text-white bg-dark">
-              <img src="assets/images/skills/icons8-source-code-96.png" class="card-img-top mt-5" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center mb-4">Frontend Developer</h5>
-                <p class="card-text pt-2">
-                  <ul type="circle">
-                    <li>HTML & CSS</li>
-                    <li>Javascript</li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted fs-5">&starf;&starf;&starf;&starf;&star;</small>
-              </div>
-            </div>
-            <div class="card text-white bg-dark">
-              <img src="assets/images/skills/icons8-design-90.png" class="card-img-top mt-5" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center mb-4">Design</h5>
-                <p class="card-text pt-2">
-                  <ul type="circle">
-                    <li>UI/UX Design</li>
-                    <li>Logo Design</li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted fs-5">&starf;&starf;&starf;&star;&star;</small>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div id="container-sticky" class="container-fluid flex-12 px-4">
-          <div class="works-container">
-            <section id="works" class="pt-5">
-              <h2 class="my-4">Some of My Works</h2>
-              <div class="flex-12">
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work1.PNG')">
-                  <p>Custom PHP Framework</p>
-                </div>
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work2.PNG')">
-                  <p>Public Transportaion GIS - Fullstack</p>
-                </div>
-              </div>
-              <div class="flex-12">
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work3.PNG')">
-                  <p>Online Course - Backend & Admin Dashboard</p>
-                </div>
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work4.PNG')">
-                  <p>Soccer Support System - Backend</p>
-                </div>
-              </div>
-              <div class="flex-12">
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work5.PNG')">
-                  <p>Team Portofolio Website - Frontend</p>
-                </div>
-                <div class="works-image shadow-sm" style="background-image: url('assets/images/works/work6.PNG')">
-                  <p>Point of Sale System - Frontend</p>
-                </div>
-              </div>
-            </section>
-            <section id="closing" class="text-center d-flex flex-column justify-content-center mb-5">
-              <h3 class="text-custom">Interested to hiring me?</h3>
-              <h1>Contact Now!</h1>
-              <h2>&#10132;</h2>
-            </section>
-          </div>
-          <aside>
-            <div id="contact" class="card text-white bg-dark py-4 px-3 mt-5">
-              <h2>Contact Me</h2>
-              <img src="assets/images/app/saya.jpg" alt="" class="p-3"/>
-              <p class="fs-5">Muhammad Hafizh Ferdiansyah</p>
-              <div class="contact-icon gap-2">
-                <img src="assets/images/app/icons8-mail.png" alt="" />
-                <img src="assets/images/app/icons8-whatsapp.png" alt="" />
-                <img src="assets/images/app/icons8-instagram.png" alt="" />
-              </div>
-            </div>
-          </aside>
-        </div>
-      </article>
+    <main class="min-h-full">
+      <section id="section-intro" data-include="intro">
+      </section>
+      <section id="section-skills"></section>
+      <section id="section-portofolio"></section>
     </main>
+    
     <footer class="text-center text-white py-3">2022 &copy; Ferdianzh</footer>
 
-    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="components/index.js" crossorigin="use-credentials"></script>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <!-- <script src="components/like_button.js"></script> -->
   </body>
 </html>
