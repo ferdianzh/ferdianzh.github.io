@@ -1,0 +1,26 @@
+<div class="mb-24">
+  <h2 class="text-center text-xl">Here is some of my <span class="text-2xl font-bold">works</span></h2>
+  <div class="overflow-hidden text-gray-700">
+    <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+      <div class="flex flex-wrap -m-1 md:-m-2" id="container-portofolio">
+        <!-- tile -->
+      </div>
+    </div>
+  </div>
+
+
+    <!-- portofolio tiles -->
+  </div>
+</div>
+<script src="../../assets/js/scripts/portofolioHandler.js"></script>
+<script>
+  async function renderPortofolio() {
+    const portofolio = await fetchPortofolio();
+    const container = document.getElementById("container-portofolio");
+
+    portofolio.map(porto => {
+      container.append(renderTile(porto));
+    });
+  }
+  renderPortofolio();
+</script>

@@ -1,0 +1,66 @@
+[
+  {
+    "field": "Backend",
+    "certificates": [
+      {
+        "id": "2VX32G2OVPYQ",
+        "title": "Belajar Dasar Pemrograman JavaScript",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Mar 2025",
+        "credentials": "https://www.dicoding.com/certificates/2VX32G2OVPYQ"
+      },
+      {
+        "id": "NVP710LK4PR0",
+        "title": "Belajar Membuat Aplikasi Back-End untuk Pemula",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Mar 2025",
+        "credentials": "https://www.dicoding.com/certificates/NVP710LK4PR0"
+      },
+      {
+        "id": "EYX427K3RZDL",
+        "title": "Belajar Fundamental Aplikasi Back-End",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Mei 2025",
+        "credentials": "https://www.dicoding.com/certificates/EYX427K3RZDL"
+      }
+    ]
+  },
+  {
+    "field": "Frontend",
+    "certificates": [
+      {
+        "id": "L4PQ36W8VPO1",
+        "title": "Belajar Dasar Pemrograman Web",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Jul 2024",
+        "credentials": "https://www.dicoding.com/certificates/L4PQ36W8VPO1"
+      },
+      {
+        "id": "1OP8L0KRLZQK",
+        "title": "Belajar Membuat Front-End Web untuk Pemula",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Aug 2024",
+        "credentials": "https://www.dicoding.com/certificates/1OP8L0KRLZQK"
+      }
+    ]
+  },
+  {
+    "field": "Machine Learning",
+    "certificates": [
+      {
+        "id": "KEXLGG940ZG2",
+        "title": "Belajar Dasar Visualisasi Data",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "May 2025",
+        "credentials": "https://www.dicoding.com/certificates/KEXLGG940ZG2"
+      },
+      {
+        "id": "1RXYM69M9XVM",
+        "title": "Memulai Pemrograman Dengan Python",
+        "publisher": "Dicoding Indonesia",
+        "expiration": "Jun 2025",
+        "credentials": "https://www.dicoding.com/certificates/1RXYM69M9XVM"
+      }
+    ]
+  }
+]

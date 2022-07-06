@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Simple PHP Frameworks",
+    "tags": ["Backend", "PHP"],
+    "image": "images/works/work1.PNG"
+  },
+  {
+    "id": 2,
+    "title": "Public Trasportation GIS Website",
+    "tags": ["Fullstack", "PHP", "Javascript", "HTML & CSS"],
+    "image": "images/works/work2.PNG"
+  },
+  {
+    "id": 3,
+    "title": "Twinsrobo Robotic Online Course Admin Page",
+    "tags": ["Backend", "PHP", "CodeIgniter"],
+    "image": "images/works/work3.PNG"
+  },
+  {
+    "id": 4,
+    "title": "Football Team Statistics API",
+    "tags": ["Backend", "PHP", "laravel"],
+    "image": "images/works/work4.PNG"
+  },
+  {
+    "id": 5,
+    "title": "Prototype Team Profile Website",
+    "tags": ["Frontend", "Javascript", "HTML & CSS"],
+    "image": "images/works/work5.PNG"
+  }
+]
