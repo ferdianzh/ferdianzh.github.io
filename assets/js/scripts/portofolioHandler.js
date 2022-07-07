@@ -38,11 +38,15 @@ function renderTile({ id, title, tags, image }) {
     tileMask.append(tileTexts);
 
     const tileLink = document.createElement('a');
-    tileLink.href = '#detail-works' + id;
+    tileLink.href = '#detail-works-' + id;
+    // tileLink.dataset.bsToggle = 'modal';
+    // tileLink.dataset.bsTarget = '#exampleModalCenter';
     tileLink.append(tileMask);
 
     const tileInner = document.createElement('div');
-    tileInner.classList.add('w-full', 'm-1', 'md:m-2', 'relative', 'overflow-hidden');
+    tileInner.classList.add('w-full', 'm-1', 'md:m-2', 'relative', 'overflow-hidden', 'drop-shadow-lg');
+    tileInner.dataset.portofolioId = id;
+    // tileInner.onclick = renderModal;
     tileInner.append(tileImage, tileLink);
 
     const tileContainer = document.createElement('div');
@@ -51,3 +55,8 @@ function renderTile({ id, title, tags, image }) {
 
     return tileContainer;
 }
+
+// function renderModal() {
+//     const id = $(this).data("portofolio-id");
+//     console.log(id);
+// }
